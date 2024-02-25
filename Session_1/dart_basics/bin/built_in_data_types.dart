@@ -7,6 +7,7 @@ void main(List<String> args) {
   String name = 'Ali';
   // Booleans
   bool flag = true; // false
+
   //Collections
   //lists: it has some of properties and methods
   List list = ['Ali', 'Zain', 'omar', 1, 10.0, true];

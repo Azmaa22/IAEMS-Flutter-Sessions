@@ -5,12 +5,18 @@
 import 'dart:io';
 
 void main() {
-  //Object studentName = 'Ali';
+  Object studentName1 = 7;
+  //it's error
+  // studentName1.foo();
 
   //^ will be determined while run or compile time
+  dynamic studentName2 = "ali";
+  // error while runtime
+  studentName2 = 5;
+  studentName2.foo();
   /*
-  // dynamic studentName = 'Ali';
-   dynamic studentName;
+   dynamic studentName = 'Ali';
+  
   print('please enter student name');
   String name = stdin.readLineSync();
   print(studentName.runtimeType);
@@ -26,7 +32,7 @@ void main() {
   //* late , final and const
 
   // late: the variable should be initialized
-  late var department;
+  late String department;
   department = 'Computer Sciences';
   print(department);
 
